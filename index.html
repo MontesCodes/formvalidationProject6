@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
      <link rel="stylesheet" href="styles.css" />
+     <script defer src="script.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <h2>Contact us here</h2>
       <div id="error_message"></div>
-      <form id="myForm">
+      <form id="myForm" onsubmit="return validation()">
         <div class="input_field">
           <input type="text" placeholder="Name" id="name" />
         </div>
